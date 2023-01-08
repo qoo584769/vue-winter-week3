@@ -250,7 +250,6 @@
 					const getProducts = ()=>{
 						axios.get(`${url.value}/api/${path.value}/admin/products`).then(res=>{
 							products.data = res.data.products
-							console.log(products);
 						}).catch(err=>{
 							console.log('取得產品列表錯誤',err);
 						})
